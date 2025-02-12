@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context=".ui.onboarding.OnBoardingFragment1">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,15 +22,15 @@
         android:orientation="horizontal">
 
         <Space
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <com.orenda.bottom_tab_navigation.ui.widgets.PLButton
-            android:id="@+id/skip"
+            android:id="@+id/skipButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Skip"
+            android:text="@string/skip_btn_text"
             app:btn_variant="text_only" />
 
     </LinearLayout>
@@ -57,7 +62,7 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Get Started with PolyGrow"
+            android:text="@string/onboarding_scrn1_title"
             android:textAlignment="center"
             app:txt_variant="h3" />
 
@@ -65,7 +70,7 @@
             android:id="@+id/textContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Own land? Want to invest? Buy fresh produce? You decide how to participate!"
+            android:text="@string/onboarding_scrn1_text"
             android:textAlignment="center"
             app:txt_variant="body1" />
 
@@ -84,15 +89,15 @@
         android:orientation="horizontal">
 
         <Space
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <com.orenda.bottom_tab_navigation.ui.widgets.PLButton
-            android:id="@+id/button2"
+            android:id="@+id/nextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next"
+            android:text="@string/next_btn_text"
             app:btn_variant="primary" />
 
     </LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.onboarding.LangSelectFragment"
+    android:padding="10dp">
+
+    <com.orenda.bottom_tab_navigation.ui.widgets.PLText
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_lang_title"
+        android:textAlignment="center"
+        app:txt_variant="h2"/>
+
+    <com.orenda.bottom_tab_navigation.ui.widgets.PLListItem
+        android:id="@+id/english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:list_item_variant="normal"
+        app:imageSrc="@drawable/flag_of_the_united_kingdom"
+        app:titleText="English"/>
+
+
+    <com.orenda.bottom_tab_navigation.ui.widgets.PLListItem
+        android:id="@+id/sihala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:list_item_variant="normal"
+        app:imageSrc="@drawable/flag_of_sri_lanka"
+        app:titleText="Sinhala"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sinhala"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Only"
+        style="@style/Widget.Material3.Button.OutlinedButton"/>
+</LinearLayout>

@@ -23,4 +23,17 @@
             <enum name="body2" value="9"/>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="PLListItem">
+        <attr name="list_item_variant" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="outlined" value="1"/>
+            <enum name="text_only" value="2"/>
+            <enum name="contained" value="3"/>
+        </attr>
+        <attr name="titleText" format="string"/>
+        <attr name="secondaryText" format="string"/>
+        <attr name="imageSrc" format="reference"/>
+        <attr name="showAction" format="boolean"/>
+    </declare-styleable>
 </resources>

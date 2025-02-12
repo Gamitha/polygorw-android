@@ -3,6 +3,17 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="skip_btn_text">Skip</string>
+    <string name="onboarding_scrn1_title">Get Started with PolyGrow</string>
+    <string name="onboarding_scrn1_text">Own land? Want to invest? Buy fresh produce? You decide how to participate!</string>
+    <string name="next_btn_text">Next</string>
+    <string name="onboarding_scrn2_title">Start Growing Together</string>
+    <string name="onboarding_scrn2_text">Add your land, fund a project, or explore crops. Seamlessly manage everything in one place.</string>
+    <string name="back_btn_text">Back</string>
+    <string name="onboarding_scrn3_title">Harvest Success</string>
+    <string name="onboarding_scrn3_text">Monitor progress, receive updates, and enjoy secure transactions. Your journey, your rewards!</string>
+    <string name="onboarding_finish_btn_text">Let\'s Begin</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_lang_title">Choose the Language</string>
 </resources>

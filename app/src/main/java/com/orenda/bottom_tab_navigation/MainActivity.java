@@ -19,6 +19,7 @@ import com.orenda.bottom_tab_navigation.databinding.ActivityMainBinding;
 
 import java.util.Objects;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;

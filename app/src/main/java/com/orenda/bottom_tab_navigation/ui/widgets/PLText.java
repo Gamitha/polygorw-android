@@ -50,29 +50,44 @@ public class PLText extends MaterialTextView {
             case H1:
                 throw new UnsupportedOperationException("H1 Not implemented yet");
             case H2:
-                throw new UnsupportedOperationException("H2 Not implemented yet");
+                setTextSize(28);
+                setTextColor(ContextCompat.getColor(getContext(), R.color.black));
+                setTypeface(ResourcesCompat.getFont(this.getContext(), R.font.poppins_bold));
+                break;
             case H3:
                 setTextSize(22);
                 setTextColor(ContextCompat.getColor(getContext(), R.color.black));
                 setTypeface(ResourcesCompat.getFont(this.getContext(), R.font.poppins_semibold));
                 break;
             case H4:
-                throw new UnsupportedOperationException("H4 Not implemented yet");
+                setTextSize(22);
+                setTextColor(ContextCompat.getColor(getContext(), R.color.black));
+                setTypeface(ResourcesCompat.getFont(this.getContext(), R.font.poppins_regular));
+                break;
             case H5:
                 throw new UnsupportedOperationException("H5 Not implemented yet");
             case H6:
                 throw new UnsupportedOperationException("H6 Not implemented yet");
             case SUBTITLE1:
-                throw new UnsupportedOperationException("SUBTITLE1 Not implemented yet");
+                setTextSize(16);
+                setTextColor(ContextCompat.getColor(getContext(), R.color.black));
+                setTypeface(ResourcesCompat.getFont(this.getContext(), R.font.poppins_semibold));
+                break;
             case SUBTITLE2:
-                throw new UnsupportedOperationException("SUBTITLE2 Not implemented yet");
+                setTextSize(14);
+                setTextColor(ContextCompat.getColor(getContext(), R.color.green_900));
+                setTypeface(ResourcesCompat.getFont(this.getContext(), R.font.poppins_bold));
+                break;
             case BODY1:
                 setTextSize(16);
                 setTextColor(ContextCompat.getColor(getContext(), R.color.black));
                 setTypeface(ResourcesCompat.getFont(this.getContext(), R.font.poppins_regular));
                 break;
             case BODY2:
-                throw new UnsupportedOperationException("BODY2 Not implemented yet");
+                setTextSize(14);
+                setTextColor(ContextCompat.getColor(getContext(), R.color.green_900));
+                setTypeface(ResourcesCompat.getFont(this.getContext(), R.font.poppins_regular));
+                break;
         }
     }
 }
