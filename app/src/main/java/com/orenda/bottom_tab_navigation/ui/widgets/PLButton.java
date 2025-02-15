@@ -11,7 +11,7 @@ import com.google.android.material.button.MaterialButton;
 import com.orenda.bottom_tab_navigation.R;
 
 public class PLButton extends MaterialButton {
-    public enum PLButtonVariant { PRIMARY, SECONDARY, OUTLINED, TEXT_ONLY }
+    public enum PLButtonVariant { PRIMARY, SECONDARY, OUTLINED, TEXT_ONLY, ROUNDED }
 
     public PLButton(Context context) {
         super(context);
@@ -61,6 +61,11 @@ public class PLButton extends MaterialButton {
                 setStrokeWidth(0);
                 setOutlineProvider(null);
                 setTextColor(ContextCompat.getColor(getContext(), R.color.green_900));
+                break;
+            case ROUNDED:
+                setBackgroundColor(ContextCompat.getColor(getContext(), R.color.green_300));
+                setTextColor(R.color.green_900);
+                setCornerRadius(20);
                 break;
         }
     }
