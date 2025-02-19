@@ -21,8 +21,11 @@
         android:label="fragment_on_boarding1"
         tools:layout="@layout/fragment_on_boarding1" >
         <action
-            android:id="@+id/action_onBoardingFragment1_to_onBoardingFragment23"
+            android:id="@+id/action_onBoardingFragment1_to_onBoardingFragment2"
             app:destination="@id/onBoardingFragment2" />
+        <action
+            android:id="@+id/action_onBoardingFragment1_to_onBoardingFragment3"
+            app:destination="@id/onBoardingFragment3" />
     </fragment>
     <fragment
         android:id="@+id/onBoardingFragment2"
@@ -38,9 +41,6 @@
         android:name="com.orenda.bottom_tab_navigation.ui.onboarding.OnBoardingFragment3"
         android:label="fragment_on_boarding3"
         tools:layout="@layout/fragment_on_boarding3" >
-        <action
-            android:id="@+id/action_onBoardingFragment3_to_mobile_navigation"
-            app:destination="@id/mobile_navigation" />
         <action
             android:id="@+id/action_onBoardingFragment3_to_mainActivity"
             app:destination="@id/mainActivity" />

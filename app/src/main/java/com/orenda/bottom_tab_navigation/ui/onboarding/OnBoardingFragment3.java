@@ -21,7 +21,7 @@ import java.util.Objects;
  * Use the {@link OnBoardingFragment3#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class OnBoardingFragment3 extends Fragment {
+public class OnBoardingFragment3 extends BaseOnBoardingScreen {
 
 
     public OnBoardingFragment3() {

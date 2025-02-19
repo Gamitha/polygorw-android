@@ -17,7 +17,7 @@ import com.orenda.bottom_tab_navigation.R;
  * Use the {@link OnBoardingFragment2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class OnBoardingFragment2 extends Fragment {
+public class OnBoardingFragment2 extends BaseOnBoardingScreen {
 
     public OnBoardingFragment2() {
         // Required empty public constructor
@@ -27,7 +27,7 @@ public class OnBoardingFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_on_boarding2, container, false);
+        this.view = inflater.inflate(R.layout.fragment_on_boarding2, container, false);
 
         Button backBtn = view.findViewById(R.id.backButton);
         backBtn.setOnClickListener(v -> {
@@ -39,6 +39,11 @@ public class OnBoardingFragment2 extends Fragment {
         nextButton.setOnClickListener(v -> {
             // Navigate to the next fragment
             Navigation.findNavController(v).navigate(R.id.action_onBoardingFragment2_to_onBoardingFragment3);
+        });
+
+        Button skipButton = view.findViewById(R.id.skipButton);
+        skipButton.setOnClickListener(v -> {
+            this.skipOnBoarding(R.id.action_onBoardingFragment2_to_onBoardingFragment3);
         });
         return view;
     }

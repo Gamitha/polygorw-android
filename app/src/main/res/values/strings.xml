@@ -16,4 +16,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select_lang_title">Choose the Language</string>
+    <string name="select_your_language_title">Select Your Language</string>
+    <string name="select_your_language_desc">Start investing with PollyGrow in the language you’re most comfortable with.</string>
+    <string name="home_tab_1">All</string>
+    <string name="home_tab_2">Watch List</string>
+    <string name="home_tab_3">Mine</string>
 </resources>

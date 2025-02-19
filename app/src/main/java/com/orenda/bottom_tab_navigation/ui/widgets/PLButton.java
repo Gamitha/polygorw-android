@@ -39,6 +39,7 @@ public class PLButton extends MaterialButton {
     }
 
     public void applyVariant(PLButtonVariant variant) {
+
         switch (variant) {
             case PRIMARY:
                 setBackgroundColor(ContextCompat.getColor(getContext(), R.color.green_300));

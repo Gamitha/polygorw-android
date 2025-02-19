@@ -1,55 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    android:padding="80dp"
     tools:context=".ui.onboarding.LangSelectFragment">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lang_vec" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="vertical">
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
 
         <com.orenda.bottom_tab_navigation.ui.widgets.PLText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Select Your Language"
-            app:txt_variant="subtitle1"/>
+            android:text="@string/select_your_language_title"
+            android:textAlignment="center"
+            app:txt_variant="h3" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight=".1"/>
-
-        <com.orenda.bottom_tab_navigation.ui.widgets.PLButton
-            android:id="@+id/button2"
+        <com.orenda.bottom_tab_navigation.ui.widgets.PLText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/select_your_language_desc"
+            android:textAlignment="center"
+            app:txt_variant="body1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <com.orenda.bottom_tab_navigation.ui.widgets.PLButton
+            android:id="@+id/select_eng"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
             android:drawableLeft="@drawable/flag_of_the_united_kingdom"
             android:text="English"
-            app:btn_variant="rounded"/>
+            app:btn_variant="rounded" />
 
         <com.orenda.bottom_tab_navigation.ui.widgets.PLButton
-            android:id="@+id/button"
+            android:id="@+id/select_sin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:drawableLeft="@drawable/flag_of_sri_lanka"
             android:text="Sinhala"
-            app:btn_variant="rounded"/>
+            app:btn_variant="rounded" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
     </LinearLayout>
-</RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3" />
+
+</LinearLayout>
