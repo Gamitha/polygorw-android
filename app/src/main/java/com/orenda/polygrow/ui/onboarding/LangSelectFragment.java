@@ -9,6 +9,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import com.orenda.polygrow.MainActivity;
 import com.orenda.polygrow.R;
 
 public class LangSelectFragment extends Fragment {
@@ -27,7 +28,10 @@ public class LangSelectFragment extends Fragment {
         Button btnEnglish = view.findViewById(R.id.select_eng);
         btnEnglish.setOnClickListener(v -> {
             // Save the selected language to shared preferences
-
+            MainActivity app = (MainActivity) getActivity();
+            if (app != null) {
+                app.applyAndSavedLocale("en");
+            }
             // Navigate to the next fragment
             Navigation.findNavController(view).navigate(R.id.action_langSelectFragment_to_onBoardingFragment1);
         });
@@ -35,7 +39,10 @@ public class LangSelectFragment extends Fragment {
         Button btnSinhala = view.findViewById(R.id.select_sin);
         btnSinhala.setOnClickListener(v -> {
             // Save the selected language to shared preferences
-
+            MainActivity app = (MainActivity) getActivity();
+            if (app != null) {
+                app.applyAndSavedLocale("si");
+            }
             // Navigate to the next fragment
             Navigation.findNavController(view).navigate(R.id.action_langSelectFragment_to_onBoardingFragment1);
         });

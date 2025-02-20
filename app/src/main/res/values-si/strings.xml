@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bottom-Tab-Navigation</string>
+    <string name="title_home">මුල් පිටුව</string>
+    <string name="title_dashboard">උපකරණ පුවරුව</string>
+    <string name="title_notifications">දැනුම්දීම්</string>
+    <string name="skip_btn_text">මඟහරින්න</string>
+    <string name="onboarding_scrn1_title">PolyGrow සමඟ අරඹන්න</string>
+    <string name="onboarding_scrn1_text">ඔබට ඉඩම් තිබේද? ආයෝජනය කිරීමට කැමතිද? تازہ වගා භාණ්ඩ මිලදී ගැනීමට කැමතිද? ඔබේ සහභාගිත්වය ඔබ තීරණය කරන්න!</string>
+    <string name="next_btn_text">ඊළඟ</string>
+    <string name="onboarding_scrn2_title">එකට වගා කිරීම අරඹන්න</string>
+    <string name="onboarding_scrn2_text">ඔබේ ඉඩම එක් කරන්න, ව්‍යාපෘතියක් මුදල් ආයෝජනය කරන්න, හෝ වගා ගැන විමසන්න. හැම දෙයක්ම එකම තැනකින් කළමනාකරණය කරන්න.</string>
+    <string name="back_btn_text">ආපසු</string>
+    <string name="onboarding_scrn3_title">සාර්ථක අස්වනු</string>
+    <string name="onboarding_scrn3_text">ප්‍රගතිය නිරීක්ෂණය කරන්න, යාවත්කාලීන තොරතුරු ලබා ගන්න, සහ ආරක්ෂිත ගනුදෙනු කරන්න. ඔබේ ගමන් මඟ, ඔබේ ප්‍රතිලාභ!</string>
+    <string name="onboarding_finish_btn_text">අරඹමු</string>
+    <string name="hello_blank_fragment">හෙලෝ හිස් ෆ්‍රැග්මන්ට්</string>
+    <string name="select_lang_title">භාෂාව තෝරන්න</string>
+    <string name="select_your_language_title">ඔබේ භාෂාව තෝරන්න</string>
+    <string name="select_your_language_desc">ඔබට වඩාත් පහසු භාෂාවෙන් PollyGrow සමඟ ආයෝජනය කිරීම අරඹන්න.</string>
+    <string name="home_tab_1">සියල්ල</string>
+    <string name="home_tab_2">නිරීක්ෂණ ලැයිස්තුව</string>
+    <string name="home_tab_3">මගේ</string>
+</resources>

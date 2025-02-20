@@ -2,6 +2,7 @@ package com.orenda.polygrow;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 
@@ -16,6 +17,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.orenda.polygrow.databinding.ActivityMainBinding;
 
+import java.util.Locale;
 import java.util.Objects;
 
 
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        this.applySavedLocale();
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -47,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        SharedPreferences sharedPrefs = getSharedPreferences("MyAppPrefs", Context.MODE_PRIVATE);
+        SharedPreferences sharedPrefs = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE);
         boolean isOnboarded = sharedPrefs.getBoolean("isOnboarded", false);
 
         if (!isOnboarded) {
@@ -61,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void completeOnboarding() {
-        SharedPreferences sharedPrefs = getSharedPreferences("MyAppPrefs", Context.MODE_PRIVATE);
+        SharedPreferences sharedPrefs = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPrefs.edit();
         editor.putBoolean("isOnboarded", true);
         editor.apply();
@@ -71,6 +75,31 @@ public class MainActivity extends AppCompatActivity {
         navView.setVisibility(View.VISIBLE);
 
         navController.setGraph(R.navigation.mobile_navigation); // Switch to the main graph
+    }
+
+    public void applyAndSavedLocale(String languageCode) {
+        SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
+        editor.putString("Lang", languageCode);
+        editor.apply();
+
+        Locale locale = new Locale(languageCode);
+        Locale.setDefault(locale);
+
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+
+    }
+
+    private void applySavedLocale() {
+        String languageCode = getSharedPreferences("Settings", MODE_PRIVATE)
+                .getString("Lang", "en"); // Default to English
+        Locale locale = new Locale(languageCode);
+        Locale.setDefault(locale);
+
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
 
 }
