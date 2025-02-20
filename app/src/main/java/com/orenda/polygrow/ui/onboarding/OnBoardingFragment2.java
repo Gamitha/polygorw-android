@@ -1,4 +1,4 @@
-package com.orenda.bottom_tab_navigation.ui.onboarding;
+package com.orenda.polygrow.ui.onboarding;
 
 import android.os.Bundle;
 
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.orenda.bottom_tab_navigation.R;
+import com.orenda.polygrow.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,4 +1,4 @@
-package com.orenda.bottom_tab_navigation.ui.widgets;
+package com.orenda.polygrow.ui.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.material.button.MaterialButton;
-import com.orenda.bottom_tab_navigation.R;
+import com.orenda.polygrow.R;
 
 public class PLButton extends MaterialButton {
     public enum PLButtonVariant { PRIMARY, SECONDARY, OUTLINED, TEXT_ONLY, ROUNDED }

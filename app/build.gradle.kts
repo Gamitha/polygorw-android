@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.orenda.bottom_tab_navigation"
+    namespace = "com.orenda.polygrow"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.orenda.bottom_tab_navigation"
+        applicationId = "com.orenda.polygrow"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

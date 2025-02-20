@@ -1,4 +1,4 @@
-package com.orenda.bottom_tab_navigation.ui;
+package com.orenda.polygrow.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.orenda.bottom_tab_navigation.MainActivity;
-import com.orenda.bottom_tab_navigation.R;
+import com.orenda.polygrow.MainActivity;
+import com.orenda.polygrow.R;
 
 public class SplashActivity extends AppCompatActivity {
 

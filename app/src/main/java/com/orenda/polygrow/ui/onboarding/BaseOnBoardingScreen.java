@@ -1,14 +1,11 @@
-package com.orenda.bottom_tab_navigation.ui.onboarding;
+package com.orenda.polygrow.ui.onboarding;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import com.orenda.bottom_tab_navigation.R;
+import com.orenda.polygrow.R;
 
 public abstract class BaseOnBoardingScreen extends Fragment {
 

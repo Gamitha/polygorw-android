@@ -1,4 +1,4 @@
-package com.orenda.bottom_tab_navigation;
+package com.orenda.polygrow;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,14 +8,13 @@ import android.view.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.splashscreen.SplashScreen;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.orenda.bottom_tab_navigation.databinding.ActivityMainBinding;
+import com.orenda.polygrow.databinding.ActivityMainBinding;
 
 import java.util.Objects;
 

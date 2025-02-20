@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Bottom-Tab-Navigation"
+rootProject.name = "Ploygrow"
 include(":app")

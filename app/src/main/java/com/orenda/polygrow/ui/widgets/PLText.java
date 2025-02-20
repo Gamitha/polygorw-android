@@ -1,16 +1,14 @@
-package com.orenda.bottom_tab_navigation.ui.widgets;
+package com.orenda.polygrow.ui.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.util.AttributeSet;
 
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.google.android.material.textview.MaterialTextView;
-import com.orenda.bottom_tab_navigation.R;
+import com.orenda.polygrow.R;
 
 public class PLText extends MaterialTextView {
 

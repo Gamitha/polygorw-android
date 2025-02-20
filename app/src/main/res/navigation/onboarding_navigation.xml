@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/langSelectFragment"
-        android:name="com.orenda.bottom_tab_navigation.ui.onboarding.LangSelectFragment"
+        android:name="com.orenda.polygrow.ui.onboarding.LangSelectFragment"
         android:label="fragment_lang_select"
         tools:layout="@layout/fragment_lang_select" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/onBoardingFragment1"
-        android:name="com.orenda.bottom_tab_navigation.ui.onboarding.OnBoardingFragment1"
+        android:name="com.orenda.polygrow.ui.onboarding.OnBoardingFragment1"
         android:label="fragment_on_boarding1"
         tools:layout="@layout/fragment_on_boarding1" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/onBoardingFragment2"
-        android:name="com.orenda.bottom_tab_navigation.ui.onboarding.OnBoardingFragment2"
+        android:name="com.orenda.polygrow.ui.onboarding.OnBoardingFragment2"
         android:label="fragment_on_boarding2"
         tools:layout="@layout/fragment_on_boarding2" >
         <action
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/onBoardingFragment3"
-        android:name="com.orenda.bottom_tab_navigation.ui.onboarding.OnBoardingFragment3"
+        android:name="com.orenda.polygrow.ui.onboarding.OnBoardingFragment3"
         android:label="fragment_on_boarding3"
         tools:layout="@layout/fragment_on_boarding3" >
         <action
@@ -47,6 +47,6 @@
     </fragment>
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.orenda.bottom_tab_navigation.MainActivity"
+        android:name="com.orenda.polygrow.MainActivity"
         android:label="MainActivity" />
 </navigation>

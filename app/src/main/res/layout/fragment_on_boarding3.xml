@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <com.orenda.bottom_tab_navigation.ui.widgets.PLButton
+        <com.orenda.polygrow.ui.widgets.PLButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         android:layout_marginRight="10dp"
         android:orientation="vertical">
 
-        <com.orenda.bottom_tab_navigation.ui.widgets.PLText
+        <com.orenda.polygrow.ui.widgets.PLText
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             android:textAlignment="center"
             app:txt_variant="h3" />
 
-        <com.orenda.bottom_tab_navigation.ui.widgets.PLText
+        <com.orenda.polygrow.ui.widgets.PLText
             android:id="@+id/textContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <com.orenda.bottom_tab_navigation.ui.widgets.PLButton
+        <com.orenda.polygrow.ui.widgets.PLButton
             android:id="@+id/nextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

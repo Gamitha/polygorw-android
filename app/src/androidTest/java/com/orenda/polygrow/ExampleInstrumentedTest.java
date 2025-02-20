@@ -1,4 +1,4 @@
-package com.orenda.bottom_tab_navigation;
+package com.orenda.polygrow;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.orenda.bottom_tab_navigation", appContext.getPackageName());
+        assertEquals("com.orenda.polygrow", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.orenda.bottom_tab_navigation.ui.notifications;
+package com.orenda.polygrow.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
