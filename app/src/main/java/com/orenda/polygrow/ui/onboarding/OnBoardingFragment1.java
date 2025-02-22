@@ -39,6 +39,7 @@ public class OnBoardingFragment1 extends BaseOnBoardingScreen {
         skipButton.setOnClickListener(v -> {
             this.skipOnBoarding(R.id.action_onBoardingFragment1_to_onBoardingFragment3);
         });
+
         return view;
     }
 }

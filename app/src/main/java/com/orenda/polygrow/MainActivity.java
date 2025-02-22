@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -15,13 +16,14 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.orenda.polygrow.auth.AuthenticatedActivity;
 import com.orenda.polygrow.databinding.ActivityMainBinding;
 
 import java.util.Locale;
 import java.util.Objects;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AuthenticatedActivity {
 
     private ActivityMainBinding binding;
     private NavController navController;
@@ -53,10 +55,14 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPrefs = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE);
         boolean isOnboarded = sharedPrefs.getBoolean("isOnboarded", false);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
+
         if (!isOnboarded) {
             // Hide BottomNavigationView during onboarding
             navView.setVisibility(View.GONE);
-            Objects.requireNonNull(getSupportActionBar()).hide(); // Hide the ActionBar
             navController.setGraph(R.navigation.onboarding_navigation); // Set the onboarding graph
         } else {
             navController.setGraph(R.navigation.mobile_navigation); // Set the main graph
@@ -68,12 +74,6 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPrefs.edit();
         editor.putBoolean("isOnboarded", true);
         editor.apply();
-
-        // Show BottomNavigationView after onboarding
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        navView.setVisibility(View.VISIBLE);
-
-        navController.setGraph(R.navigation.mobile_navigation); // Switch to the main graph
     }
 
     public void applyAndSavedLocale(String languageCode) {

@@ -9,11 +9,16 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.firebase.auth.FirebaseAuth;
 import com.orenda.polygrow.MainActivity;
 import com.orenda.polygrow.R;
 
 public class LangSelectFragment extends Fragment {
 
+    private static final int RC_SIGN_IN = 100;
+    private FirebaseAuth mAuth;
+    private GoogleSignInClient googleSignInClient;
 
     public LangSelectFragment() {
         // Required empty public constructor
@@ -34,6 +39,7 @@ public class LangSelectFragment extends Fragment {
             }
             // Navigate to the next fragment
             Navigation.findNavController(view).navigate(R.id.action_langSelectFragment_to_onBoardingFragment1);
+
         });
 
         Button btnSinhala = view.findViewById(R.id.select_sin);

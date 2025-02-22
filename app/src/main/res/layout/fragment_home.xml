@@ -32,4 +32,9 @@
             android:text="@string/home_tab_3" />
     </com.google.android.material.tabs.TabLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>
