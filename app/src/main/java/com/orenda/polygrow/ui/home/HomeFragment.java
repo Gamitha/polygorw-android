@@ -14,8 +14,6 @@ import com.orenda.polygrow.R;
 import com.orenda.polygrow.ui.proj.ProjectItem;
 import com.orenda.polygrow.ui.proj.ProjectListAdapter;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class HomeFragment extends Fragment {

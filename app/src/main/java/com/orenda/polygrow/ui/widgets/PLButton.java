@@ -61,6 +61,7 @@ public class PLButton extends MaterialButton {
                 setElevation(0);
                 setStrokeWidth(0);
                 setOutlineProvider(null);
+                setRippleColorResource(R.color.green_300);
                 setTextColor(ContextCompat.getColor(getContext(), R.color.green_900));
                 break;
             case ROUNDED:

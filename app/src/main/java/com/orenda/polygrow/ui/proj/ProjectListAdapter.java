@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.orenda.polygrow.R;
@@ -46,6 +47,14 @@ public class ProjectListAdapter extends RecyclerView.Adapter<ProjectListAdapter.
                             listener.onItemClick(position);
                         }
                     }
+                }
+            });
+
+            itemView.findViewById(R.id.viewDetails).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.i("ProjectListAdapter", "View Details Button Clicked");
+                    Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_projectDetailsViewFragment);
                 }
             });
         }

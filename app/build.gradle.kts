@@ -54,6 +54,9 @@ dependencies {
     implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
 
     implementation("com.github.ivbaranov:materialfavoritebutton:0.1.5")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
+    implementation("com.squareup.picasso:picasso:2.8")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

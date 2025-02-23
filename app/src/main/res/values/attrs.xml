@@ -25,4 +25,10 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="PLImageCardView">
+        <attr name="src" format="reference" />
+        <attr name="cardCornerRadius" format="dimension" />
+        <attr name="active" format="boolean" />
+    </declare-styleable>
+    <dimen name="outline_width">4dp</dimen>
 </resources>
