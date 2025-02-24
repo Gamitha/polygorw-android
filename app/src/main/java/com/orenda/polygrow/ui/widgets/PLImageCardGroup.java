@@ -62,6 +62,10 @@ public class PLImageCardGroup extends LinearLayout {
         }
     }
 
+    public void setSelectedImageCardView(Integer index) {
+        selectImageCardView(imageCardViews.get(index), index);
+    }
+
     public void setOnImageCardSelectedListener(OnImageCardSelectedListener listener) {
         this.onImageCardSelectedListener = listener;
     }

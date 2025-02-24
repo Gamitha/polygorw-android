@@ -48,16 +48,6 @@ public class ProjectDetailsViewFragment extends Fragment {
         this.view = inflater.inflate(R.layout.fragment_project_details_view, container, false);
 
         getActivity().findViewById(R.id.nav_view).setVisibility(View.GONE);
-//
-//
-//        List<SlideModel> slideModels = List.of(
-//                new SlideModel("https://picsum.photos/id/237/200/300", null, ScaleTypes.CENTER_CROP),
-//                new SlideModel("https://picsum.photos/seed/picsum/200/300", null, ScaleTypes.CENTER_CROP),
-//                new SlideModel("https://picsum.photos/200/300?grayscale", null, ScaleTypes.CENTER_CROP)
-//        );
-//
-//        ImageSlider imageSlider = this.view.findViewById(R.id.image_slider);
-//        imageSlider.setImageList(slideModels);
 
         carouselWithIndicator = view.findViewById(R.id.carousel_with_indicator);
         List<String> imageResources = Arrays.asList(
@@ -69,28 +59,6 @@ public class ProjectDetailsViewFragment extends Fragment {
         return this.view;
     }
 
-    public void goToNextSlide(ImageSlider imageSlider) {
-        try {
-            Field field = ImageSlider.class.getDeclaredField("viewPager");
-            field.setAccessible(true);
-            Object sliderViewPager = field.get(imageSlider);
-
-            if (sliderViewPager instanceof androidx.viewpager.widget.ViewPager) {
-                androidx.viewpager.widget.ViewPager viewPager = (androidx.viewpager.widget.ViewPager) sliderViewPager;
-
-                int nextItem = viewPager.getCurrentItem() + 1;
-                int itemCount = viewPager.getAdapter().getCount();
-
-                if (nextItem < itemCount) {
-                    viewPager.setCurrentItem(nextItem, true);
-                } else {
-                    viewPager.setCurrentItem(0, true); // Loop back to the first slide
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     public void onDestroyView() {

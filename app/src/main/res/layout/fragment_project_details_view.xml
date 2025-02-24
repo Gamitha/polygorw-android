@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,8 +9,133 @@
     android:orientation="vertical"
     tools:context=".ui.proj.ProjectDetailsViewFragment">
 
-    <com.orenda.polygrow.ui.widgets.PLCarousel
-        android:id="@+id/carousel_with_indicator"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.orenda.polygrow.ui.widgets.PLCarousel
+            android:id="@+id/carousel_with_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.orenda.polygrow.ui.widgets.PLText
+                        android:id="@+id/project_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Project Name"
+                        app:txt_variant="subtitle1" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                        android:id="@+id/favorite_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:mfb_favorite_image="@drawable/ic_star_filled"
+                        app:mfb_not_favorite_image="@drawable/ic_star"
+                        app:mfb_size="45" />
+                </LinearLayout>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/location_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Location"
+                    android:textColor="@color/red_900"
+                    app:chipBackgroundColor="@color/red_300"
+                    app:chipIcon="@drawable/ic_location"
+                    app:chipIconSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.orenda.polygrow.ui.widgets.PLText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Financials"
+                    app:txt_variant="subtitle2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.orenda.polygrow.ui.widgets.PLText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Harvests"
+                    app:txt_variant="subtitle2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.orenda.polygrow.ui.widgets.PLText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Maintainance"
+                    app:txt_variant="subtitle2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.orenda.polygrow.ui.widgets.PLText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Contributors"
+                    app:txt_variant="subtitle2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.orenda.polygrow.ui.widgets.PLText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Nearby Projects"
+                    app:txt_variant="subtitle2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.orenda.polygrow.ui.widgets.PLButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Contibute"
+        app:btn_variant="primary" />
+</FrameLayout>
