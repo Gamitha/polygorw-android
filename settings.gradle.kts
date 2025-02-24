@@ -22,3 +22,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ploygrow"
 include(":app")
+
+gradle.beforeProject {
+    exec {
+        commandLine("git", "pull", "origin", "master")
+    }
+}
